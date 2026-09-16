@@ -1,0 +1,7 @@
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <!-- Existing backend compatibility. Replace with HTTPS when the server supports it. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">158.180.67.53</domain>
+    </domain-config>
+</network-security-config>

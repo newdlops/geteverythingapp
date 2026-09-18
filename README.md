@@ -50,6 +50,15 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 설계는 [DESIGN.md](DESIGN.md), 기능 대조와 검증 기록은 [docs/MIGRATION.md](docs/MIGRATION.md)를 참고하세요.
 
+## 테스트 APK 배포 페이지
+
+`/install/` 공개 설치 안내, QR 공유, APK 다운로드 파일은 [distribution/README.md](distribution/README.md)에 따라 생성합니다. 페이지와 APK 버전 정보는 `python3 distribution/build.py`로 준비하며 서버 인증 정보는 저장소에 포함하지 않습니다.
+
+- [공개 설치 페이지](http://158.180.67.53/install/)
+- [테스트 APK 바로 다운로드](http://158.180.67.53/install/hotdealmoa-test.apk)
+
+2026-09-17에 `2.0.0-native` 테스트 APK를 배포했습니다. 로그인 없이 내려받을 수 있으며 공개 파일의 해시·서명과 에뮬레이터 설치·실행을 확인했습니다.
+
 ## 기술 참고
 
 [AGP 9.2 호환성](https://developer.android.com/build/releases/agp-9-2-0-release-notes), [AGP 내장 Kotlin](https://developer.android.com/build/migrate-to-built-in-kotlin), [카카오 Android 로그인](https://developers.kakao.com/docs/ko/kakaologin/android), [AndroidX Test 릴리스](https://developer.android.com/jetpack/androidx/releases/test).

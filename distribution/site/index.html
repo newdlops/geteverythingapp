@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F8F9FA">
+  <meta name="description" content="핫딜모아 Android 테스트 앱을 다운로드하고 설치하세요. 설치 방법과 테스트 중인 기능을 안내합니다.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>핫딜모아 테스트 앱 설치</title>
+  <link rel="icon" href="/install/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/install/assets/style.css">
+  <script src="/install/assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header wrap">
+    <a class="brand" href="/install/" aria-label="핫딜모아 설치 페이지">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+      <span>핫딜모아</span>
+    </a>
+    <span class="test-label">Android 테스트 배포</span>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <section class="download-panel" aria-labelledby="download-heading">
+      <div class="download-content">
+        <h1 id="download-heading">핫딜모아<br>테스트 앱 설치</h1>
+        <p class="intro">여러 커뮤니티의 핫딜을 한곳에서.<br>새로운 Android 앱을 먼저 사용해 보세요.</p>
+        <dl class="release-summary">
+          <div><dt>버전</dt><dd translate="no">{{VERSION}}</dd></div>
+          <div><dt>파일 크기</dt><dd>{{SIZE}} MiB</dd></div>
+          <div><dt>지원 기기</dt><dd>Android {{ANDROID_VERSION}} 이상</dd></div>
+        </dl>
+        <a id="download" class="button button-primary" href="/install/releases/{{APK_NAME}}" download="{{APK_NAME}}" aria-describedby="download-note download-status">
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>
+          <span id="download-label">테스트 APK 다운로드</span>
+        </a>
+        <p id="download-note" class="download-note">Android 전용 설치 파일입니다. iPhone에는 설치할 수 없습니다.</p>
+        <p id="download-status" class="status" role="status" aria-live="polite"></p>
+      </div>
+
+      <aside class="share-panel" aria-labelledby="share-heading">
+        <h2 id="share-heading">다른 기기에서 설치하기</h2>
+        <p>Android 기기의 카메라로 QR 코드를 스캔하거나 아래 링크를 보내주세요.</p>
+        <img class="qr" src="/install/assets/install-qr.png" width="232" height="232" alt="이 설치 페이지로 이동하는 QR 코드. 아래 공유 주소로도 접속할 수 있습니다.">
+        <label class="field-label" for="share-url">설치 페이지 주소</label>
+        <div class="copy-row">
+          <input id="share-url" name="install-url" type="url" value="{{PUBLIC_URL}}" readonly spellcheck="false" autocomplete="off" aria-describedby="copy-status">
+          <button id="copy-link" class="button button-secondary" type="button" hidden>복사</button>
+        </div>
+        <p id="copy-status" class="status" role="status" aria-live="polite">주소를 선택해 직접 복사할 수도 있습니다.</p>
+      </aside>
+    </section>
+
+    <section class="instructions" aria-labelledby="steps-heading">
+      <div class="section-heading">
+        <h2 id="steps-heading">설치는 이렇게 진행해요</h2>
+        <p>설치할 Android 기기에서 이 페이지를 열어주세요.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="step-number" aria-hidden="true">1</span><div><h3>APK 파일 다운로드</h3><p>위의 다운로드 버튼을 누른 뒤, 브라우저의 다운로드 목록에서 파일을 여세요.</p></div></li>
+        <li><span class="step-number" aria-hidden="true">2</span><div><h3>설치 권한 확인</h3><p>설치 권한을 요청하면 현재 사용 중인 브라우저에 한해 ‘이 출처 허용’을 켜주세요. 메뉴 이름은 기기에 따라 다를 수 있습니다.</p></div></li>
+        <li><span class="step-number" aria-hidden="true">3</span><div><h3>설치 후 핫딜모아 열기</h3><p>‘설치’를 누르고 완료되면 앱을 여세요. 설치가 끝나면 허용했던 출처 권한을 다시 꺼도 됩니다.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="notes-section" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">설치 전에 확인해 주세요</h2>
+      <div class="beta-note">
+        <strong>정식 출시 전 테스트 버전입니다.</strong>
+        <p>핫딜과 포럼을 둘러볼 수 있습니다. 이용약관·개인정보처리방침은 미설정 상태로, 신규 회원가입은 아직 사용할 수 없습니다. 알림 기능은 준비 중이며 관심상품은 기기 안에 저장됩니다.</p>
+      </div>
+      <details>
+        <summary>다운로드나 설치가 되지 않아요</summary>
+        <div class="details-body">
+          <p>카카오톡 등 앱 안의 브라우저에서 열었다면 Chrome이나 Samsung Internet으로 이 페이지를 다시 열어보세요. 저장 공간과 Android 버전도 확인해 주세요.</p>
+          <p>이미 설치된 핫딜모아와 서명이 다르면 업데이트가 거부될 수 있습니다. 이 경우 테스트 담당자에게 알려주세요. 기존 앱을 삭제하면 기기에 저장된 관심상품과 로그인 정보가 사라집니다.</p>
+          <p>기기의 보안 검사에서 설치를 차단하면 표시된 내용을 테스트 담당자에게 전달해 주세요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>버전과 파일 정보 확인</summary>
+        <div class="details-body">
+          <dl class="file-info">
+            <div><dt>배포일</dt><dd><time datetime="{{PUBLISHED_DATE}}">{{PUBLISHED_LABEL}}</time></dd></div>
+            <div><dt>배포 유형</dt><dd>Debug 서명 테스트 APK</dd></div>
+            <div><dt>버전 코드</dt><dd>{{VERSION_CODE}}</dd></div>
+            <div><dt>앱 패키지</dt><dd translate="no">{{APPLICATION_ID}}</dd></div>
+            <div><dt>SHA-256</dt><dd><code translate="no">{{SHA256}}</code></dd></div>
+          </dl>
+          <a class="text-link" href="/install/releases/{{APK_NAME}}.sha256" download>파일 검증용 SHA-256 내려받기</a>
+        </div>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>핫딜모아</span><span>Android 테스트 배포판 · {{VERSION}}</span></footer>
+</body>
+</html>
